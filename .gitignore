@@ -5,6 +5,7 @@ demo/app/*.js
 demo/*.d.ts
 demo/platforms
 demo/node_modules
+!demo/webpack.*.js
 node_modules
 
 .DS_Store*

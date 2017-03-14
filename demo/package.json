@@ -4,7 +4,10 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.demo"
+    "id": "org.nativescript.demo",
+    "tns-android": {
+      "version": "2.5.0"
+    }
   },
   "dependencies": {
     "nativescript-safetynet-helper": "file:///Users/redge/Projects/Git/nativescript-safetynet-helper",
@@ -12,8 +15,28 @@
     "tns-core-modules": "2.5.1"
   },
   "devDependencies": {
+    "awesome-typescript-loader": "~3.0.0-beta.9",
+    "babel-traverse": "6.23.1",
+    "babel-types": "6.23.0",
+    "babylon": "6.16.1",
+    "copy-webpack-plugin": "~3.0.1",
+    "extract-text-webpack-plugin": "~2.0.0-beta.4",
+    "lazy": "1.0.11",
+    "nativescript-css-loader": "~0.26.0",
     "nativescript-dev-android-snapshot": "^0.*.*",
     "nativescript-dev-typescript": "~0.3.5",
-    "typescript": "~2.1.0"
+    "nativescript-dev-webpack": "^0.3.6",
+    "raw-loader": "~0.5.1",
+    "resolve-url-loader": "~1.6.0",
+    "typescript": "~2.1.0",
+    "webpack": "2.2.0",
+    "webpack-sources": "~0.1.3"
+  },
+  "scripts": {
+    "ns-bundle": "ns-bundle",
+    "start-android-bundle": "npm run ns-bundle --android --start-app",
+    "start-ios-bundle": "npm run ns-bundle --ios --start-app",
+    "build-android-bundle": "npm run ns-bundle --android --build-app",
+    "build-ios-bundle": "npm run ns-bundle --ios --build-app"
   }
 }

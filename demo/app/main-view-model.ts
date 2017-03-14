@@ -8,19 +8,8 @@ export class HelloWorldModel extends Observable {
 
     constructor() {
         super();
-        this._apiKey = "";
+        this._apiKey = global.API_KEY;
         this.updateMessage("Input your key");
-    }
-
-    get apiKey(): string {
-        return this._apiKey;
-    }
-
-    set apiKey(value: string) {
-        if (this._apiKey !== value) {
-            this._apiKey = value;
-            this.notifyPropertyChange('apiKey', value)
-        }
     }
 
     get message(): string {
