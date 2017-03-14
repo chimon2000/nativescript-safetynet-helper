@@ -1,0 +1,19 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.nativescript.demo"
+  },
+  "dependencies": {
+    "nativescript-safetynet-helper": "file:///Users/redge/Projects/Git/nativescript-safetynet-helper",
+    "nativescript-theme-core": "~1.0.2",
+    "tns-core-modules": "2.5.1"
+  },
+  "devDependencies": {
+    "nativescript-dev-android-snapshot": "^0.*.*",
+    "nativescript-dev-typescript": "~0.3.5",
+    "typescript": "~2.1.0"
+  }
+}
