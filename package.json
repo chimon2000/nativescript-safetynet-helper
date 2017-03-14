@@ -1,0 +1,27 @@
+{
+    "name": "nativescript-safetynet-helper",
+    "version": "0.1.01",
+    "description": "A NativeScript plugin to use the SafetyNet API",
+    "main": "index.js",
+    "typings": "index.d.ts",
+    "nativescript": {
+        "platforms": {
+            "android": "2.0.0"
+        }
+    },
+    "scripts": {
+        "compile": "tsc",
+        "prepublish": "npm run compile"
+    },
+    "keywords": [
+        "nativescript",
+        "root"
+    ],
+    "author": "Ryan Edge",
+    "dependencies": {},
+    "devDependencies": {
+        "tns-core-modules": "^2.5.1",
+        "typescript": "^2.0.10"
+    },
+    "private": true
+}

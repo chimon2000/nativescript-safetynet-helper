@@ -1,0 +1,16 @@
+android {
+    productFlavors {
+        "safetynethelper" {
+            dimension "safetynethelper"
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+dependencies {
+    compile 'com.github.scottyab:safetynethelper:0.3.0'
+}
