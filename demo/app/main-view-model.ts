@@ -8,6 +8,8 @@ export class HelloWorldModel extends Observable {
 
     constructor() {
         super();
+        console.log(global.API_KEY)
+        
         this._apiKey = global.API_KEY;
         this.updateMessage("Not ran");
     }

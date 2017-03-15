@@ -27,7 +27,7 @@ module.exports = function (platform, destinationApp) {
         //Define useful constants like TNS_WEBPACK
         new webpack.DefinePlugin({
             "global.TNS_WEBPACK": "true",
-            "global.API_KEY": JSON.stringify(process.env.API_URL),
+            "global.API_KEY": JSON.stringify(process.env.API_KEY),
         }),
         //Copy assets to out dir. Add your own globs as needed.
         new CopyWebpackPlugin([
