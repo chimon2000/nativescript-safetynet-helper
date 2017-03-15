@@ -14,7 +14,9 @@
   "scripts": {
     "release": "standard-version",
     "compile": "tsc",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "demo": "cd demo & tns emulate android",
+    "predemo": "cd demo & tns plugin remove nativescript-safetynet-helper & tns plugin add .. & cd .."
   },
   "keywords": [
     "NativeScript",
