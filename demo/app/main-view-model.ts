@@ -33,7 +33,7 @@ export class HelloWorldModel extends Observable {
                 return
             }
 
-            this.updateMessage(result)
+            this.updateMessage(`Basic Integrity - ${result.basicIntegrity}, CTS Profile Match - ${result.ctsProfileMatch}`)
         });
     }
 
