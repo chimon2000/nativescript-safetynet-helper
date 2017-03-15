@@ -9,7 +9,7 @@ export class HelloWorldModel extends Observable {
     constructor() {
         super();
         this._apiKey = global.API_KEY;
-        this.updateMessage("Input your key");
+        this.updateMessage("Not ran");
     }
 
     get message(): string {
@@ -38,6 +38,6 @@ export class HelloWorldModel extends Observable {
     }
 
     private updateMessage(msg) {
-        this.message = msg;
+        this.message = `Status: ${msg}`
     }
 }

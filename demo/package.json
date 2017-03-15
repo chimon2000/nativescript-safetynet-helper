@@ -1,10 +1,9 @@
 {
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
+  "description": "NS SafetyNet",
+  "license": "MIT",
   "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.demo",
+    "id": "org.nativescript.safetynet",
     "tns-android": {
       "version": "2.5.0"
     }
