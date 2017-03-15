@@ -1,31 +1,33 @@
 {
-    "name": "nativescript-safetynet-helper",
-    "version": "0.1.01",
-    "license": "MIT",
-    "description": "A NativeScript plugin to use the SafetyNet API",
-    "repository": "https://github.com/chimon2000/nativescript-safetynet-helper",
-    "main": "index.js",
-    "typings": "index.d.ts",
-    "nativescript": {
-        "platforms": {
-            "android": "2.0.0"
-        }
-    },
-    "scripts": {
-        "compile": "tsc",
-        "prepublish": "npm run compile"
-    },
-    "keywords": [
-        "NativeScript",
-        "TypeScript",
-        "SafetyNet",
-        "Android"
-    ],
-    "author": "Ryan Edge",
-    "dependencies": {},
-    "devDependencies": {
-        "tns-core-modules": "^2.5.1",
-        "typescript": "^2.0.10"
-    },
-    "private": true
+  "name": "nativescript-safetynet-helper",
+  "version": "0.1.01",
+  "license": "MIT",
+  "description": "A NativeScript plugin to use the SafetyNet API",
+  "repository": "https://github.com/chimon2000/nativescript-safetynet-helper",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0"
+    }
+  },
+  "scripts": {
+    "release": "standard-version",
+    "compile": "tsc",
+    "prepublish": "npm run compile"
+  },
+  "keywords": [
+    "NativeScript",
+    "TypeScript",
+    "SafetyNet",
+    "Android"
+  ],
+  "author": "Ryan Edge",
+  "dependencies": {},
+  "devDependencies": {
+    "standard-version": "^4.0.0",
+    "tns-core-modules": "^2.5.1",
+    "typescript": "^2.0.10"
+  },
+  "private": true
 }
