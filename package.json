@@ -30,6 +30,5 @@
     "standard-version": "^4.0.0",
     "tns-core-modules": "^2.5.1",
     "typescript": "^2.0.10"
-  },
-  "private": true
+  }
 }
