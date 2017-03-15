@@ -9,24 +9,20 @@ export class SafetyNetHelper {
     }
 
     requestTest(cb) {
-        console.log('SafetyNetWrapperCallback', !!com.scottyab.safetynet.SafetyNetHelper.SafetyNetWrapperCallback)
+
+        if(!this.apiKey) {
+            return cb(new Error('SafetyNetHelper: Missing API Key'))
+        }
+
         let SafetyNetWrapperCallback = java.lang.Object.extend({
             interfaces: [com.scottyab.safetynet.SafetyNetHelper.SafetyNetWrapperCallback],
             success(ctsProfileMatch: boolean, basicIntegrity: boolean) {
                 cb(null, { ctsProfileMatch, basicIntegrity })
             },
             error(error, msg) {
-                cb(msg)
+                cb(new Error(msg))
             }
         })
-        // let SafetyNetWrapperCallback = com.scottyab.safetynet.SafetyNetHelper.SafetyNetWrapperCallback.extend({
-        //     onSuccess(args) {
-        //         cb(null, args)
-        //     },
-        //     onError(error) {
-        //         cb(error)
-        //     }
-        // })
 
         _safetyNetHelper.requestTest(application.android.context, new SafetyNetWrapperCallback())
     }
